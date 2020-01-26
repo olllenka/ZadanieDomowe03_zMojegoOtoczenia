@@ -1,17 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Couch couch1 = new Couch();
-        Couch couch2 = new Couch();
-
-        couch1.name = "Kanapa do salonu";
-        couch1.colour = "Szary";
-        couch1.seats = 3;
-        couch1.withSleepFunction = true;
-
-        couch2.name = "Kanapa";
-        couch2.colour = "Granatowy";
-        couch2.seats = 2;
-        couch2.withSleepFunction = false;
+        Couch couch1 = new Couch("Kanapa do salonu", "Szary", 3, true);
+        Couch couch2 = new Couch("Kanapa", "Granatowy", 2, false);
 
         System.out.println(couch1.name);
         System.out.println("Kolor: " + couch1.colour);
